@@ -44,12 +44,12 @@ const ProjectCard = ({ project }) => {
     const expired = new Date().getTime() > Number(project?.expiresAt + '000')
 
     return (
-        <div id="projects" className="rounded-lg shadow-lg bg-white w-64 m-4">
+        <div id="projects" className="  rounded-md shadow-lg bg-slate-100 w-64 m-4 p-2 hover:scale-105 border-b-2 border-gray-800">
             <Link to={'/projects/' + project.id}>
                 <img
                     src={project.imageURL}
                     alt={project.title}
-                    className="rounded-xl h-64 w-full object-cover"
+                    className="rounded-md h-60 w-full object-cover"
                 />
 
                 <div className="p-4">

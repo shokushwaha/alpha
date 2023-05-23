@@ -11,7 +11,6 @@ const App = () => {
 
   useEffect(async () => {
     await isWallectConnected()
-    console.log('Blockchain loaded')
     setLoaded(true)
   }, [])
 
